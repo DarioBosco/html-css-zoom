@@ -58,6 +58,9 @@
 	width: 85%;
 	height: 85%;
 	background-color: grey;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
 }
 
 .debug .left-box,
@@ -83,4 +86,11 @@
 	background-color: red;
 	height: 100%;
 	width: 10%;
+}
+
+.partecipant {
+	width: calc(100% / 5 - 5px);
+	height: calc(100% / 5 - 5px);
+	background-color: purple;
+	border: 1px solid black;
 }
