@@ -112,9 +112,14 @@ body {
 	left: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	padding: 0 10px 0 5px;
+	padding: 0 5px;
 }
 
 .debug i {
 	color: red;
+}
+
+.debug .active {
+	border-style: inset;
+	border: 5px solid yellow;
 }
