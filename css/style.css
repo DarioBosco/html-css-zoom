@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 /* -------------------------------------------------- */
 /* Inizio Common */
 
@@ -16,24 +21,118 @@
 	clear: both;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Main */
+main {
+	background-color: black;
+	width: 100vw;
+	height: 90vh;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.window-settings {
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.main-box {
+	width: 85%;
+	height: 85%;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.partecipant {
+	width: calc(100% / 5 - 5px);
+	height: calc(100% / 5 - 5px);
+	position: relative;
+}
+
+.partecipant img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.partecipant > .overlay {
+	min-width: 30%;
+	max-width: 80%;
+	color: white;
+	font-size: 20px;
+	white-space: nowrap;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 5px;
+}
+
+.active {
+	border-style: inset;
+	border: 5px solid yellow;
+}
+
+.partecipant i {
+	color: red;
+}
+
+.left-box,
+.right-box {
+	color: white;
+	width: 5%;
+	height: 100%;
+	font-size: 24px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-box i {
+	color: grey;
+}
+
+.right-box i {
+	color: lightblue;
+}
 /* Fine Main */
 /* -------------------------------------------------- */
 /* Inizio Footer */
+footer {
+	width: 100vw;
+	height: 10vh;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28px;
+}
 
+.footer-left {
+	height: 100%;
+	width: 15%;
+}
+
+.footer-main {
+	height: 100%;
+	width: 900px;
+}
+
+.footer-right {
+	height: 100%;
+	width: 10%;
+}
 /* Fine Footer */
 /* -------------------------------------------------- */
 
 /* !DEBUG ZONE! */
 
-.debug main {
+/* .debug main {
 	width: 100vw;
 	height: 90vh;
 	background-color: lightgreen;
@@ -48,15 +147,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 28px;
-}
-
-.debug .window-settings {
-	width: 300px;
-	height: 50px;
-	background-color: green;
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 
 .debug .main-box {
@@ -82,7 +172,7 @@ body {
 .debug .footer-left {
 	background-color: red;
 	height: 100%;
-	width: 10%;
+	width: 15%;
 }
 
 .debug .footer-main {
@@ -105,7 +195,7 @@ body {
 	position: relative;
 }
 
-.debug .overlay {
+.debug .partecipant > .overlay {
 	min-width: 30%;
 	max-width: 80%;
 	color: white;
@@ -140,4 +230,23 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+} */
+
+.debug .window-settings {
+	width: 300px;
+	height: 50px;
+	background-color: green;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.debug #mic-settings {
+	background-color: lightblue;
+	width: 50%;
+}
+
+.debug #video-settings {
+	background-color: lightcoral;
+	width: 50%;
 }
