@@ -21,7 +21,6 @@ body {
 	justify-content: center;
 	padding-right: 20px;
 }
-
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Main */
@@ -176,6 +175,11 @@ footer {
 .fa-circle {
 	color: red;
 }
+
+.fas.fa-chevron-up.fa-xs {
+	font-size: 12px;
+}
+
 /* Fine Footer */
 /* -------------------------------------------------- */
 
