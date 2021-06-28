@@ -15,10 +15,11 @@ body {
 	display: flex;
 }
 
-.clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
+.inner-left {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-right: 20px;
 }
 
 /* Fine Common */
@@ -110,22 +111,53 @@ footer {
 	height: 10vh;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 28px;
+	font-size: 24px;
+	white-space: nowrap;
+	color: white;
+	background-color: #222326;
 }
 
-.footer-left {
+.footer-left,
+.footer-main,
+.footer-right {
 	height: 100%;
-	width: 15%;
 }
 
-.footer-main {
-	height: 100%;
-	width: 900px;
+#mic-settings {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.menu {
+	align-items: center;
+	justify-content: center;
+}
+
+.icon {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
 }
 
 .footer-right {
-	height: 100%;
+	line-height: 10vh;
 	width: 10%;
+}
+
+.footer-right a {
+	text-decoration: none;
+	color: red;
+	background-color: #4a4b4d;
+	width: 100%;
+	text-align: center;
+}
+
+.fa-share-alt {
+	color: #4bc800;
+}
+
+.fa-circle {
+	color: red;
 }
 /* Fine Footer */
 /* -------------------------------------------------- */
@@ -231,22 +263,3 @@ footer {
 	height: 100%;
 	object-fit: cover;
 } */
-
-.debug .window-settings {
-	width: 300px;
-	height: 50px;
-	background-color: green;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.debug #mic-settings {
-	background-color: lightblue;
-	width: 50%;
-}
-
-.debug #video-settings {
-	background-color: lightcoral;
-	width: 50%;
-}
