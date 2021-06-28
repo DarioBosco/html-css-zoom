@@ -73,13 +73,13 @@
 .debug .left-menu {
 	background-color: red;
 	height: 100%;
-	width: 10%;
+	width: 15%;
 }
 
 .debug .center-menu {
 	background-color: green;
 	height: 100%;
-	width: 300px;
+	width: 900px;
 }
 
 .debug .right-menu {
@@ -93,4 +93,10 @@
 	height: calc(100% / 5 - 5px);
 	background-color: purple;
 	border: 1px solid black;
+}
+
+.overlay {
+   width: calc(100% / 3);
+   color: white;
+   background-color: rgba(0, 0, 0, 0.205)
 }
