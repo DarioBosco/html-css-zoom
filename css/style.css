@@ -16,6 +16,10 @@
 	clear: both;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Main */
@@ -88,15 +92,29 @@
 	width: 10%;
 }
 
-.partecipant {
+.debug .partecipant {
 	width: calc(100% / 5 - 5px);
 	height: calc(100% / 5 - 5px);
 	background-color: purple;
 	border: 1px solid black;
+	position: relative;
 }
 
-.overlay {
-   width: calc(100% / 3);
-   color: white;
-   background-color: rgba(0, 0, 0, 0.205)
+.debug .overlay {
+	min-width: 30%;
+	max-width: 80%;
+	color: white;
+	font-size: 20px;
+	white-space: nowrap;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px 0 5px;
+}
+
+.debug i {
+	color: red;
 }
