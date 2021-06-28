@@ -18,3 +18,15 @@
 /* -------------------------------------------------- */
 
 /* !DEBUG ZONE! */
+
+.debug main {
+	width: 100vw;
+	height: 90vh;
+	background-color: lightgreen;
+}
+
+.debug footer {
+	width: 100vw;
+	height: 10vh;
+	background-color: lightblue;
+}
