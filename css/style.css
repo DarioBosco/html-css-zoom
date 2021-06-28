@@ -6,6 +6,16 @@
 /* -------------------------------------------------- */
 /* Inizio Common */
 
+.flex {
+	display: flex;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Main */
@@ -29,4 +39,13 @@
 	width: 100vw;
 	height: 10vh;
 	background-color: lightblue;
+}
+
+.debug .window-settings {
+	width: 300px;
+	height: 70px;
+	background-color: green;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
