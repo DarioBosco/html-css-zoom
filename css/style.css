@@ -152,7 +152,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
+	margin: 0 10px;
 }
 
 .footer-right {
